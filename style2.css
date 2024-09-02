@@ -1,0 +1,174 @@
+*
+{
+  poppion {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 0rem;
+}
+
+.nav-logo img {
+  width: 150px; /* adjust the width of the logo */
+  height: auto;
+  align-items: end;
+  margin:-240px;
+  padding-top: -2rem;
+  position: absolute;
+  margin-top: -20px;
+}
+  
+.nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+}
+
+.nav li {
+  list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a{
+  white-space: nowrap;
+  padding: 20px 30px;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-top: 45px;
+  font-size: 20px;
+  font-family: poppins;
+}
+ .nav li:hover a{
+    color: #F9C9E1;
+ }
+    
+.nav-link::before{
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 3px;
+      bottom: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #9b50cc;
+      visibility: hidden;
+      transform: all 0.3s ease-in-out 0s;
+}
+.nav-link:hover::before{
+  visibility: visible;
+  width: 100%;
+}
+
+
+#banner
+{
+    background:linear-gradient(rgba(0,0,0,0.5),#000),url(./image.jpg);
+    background-size: cover;  
+    background-position: center;
+    height: 90vh;
+}
+.logo
+{
+    width: 2x;
+    position: relative;
+    top: 4%;
+    padding-left: 10px;
+    color: #9b50cc;
+}
+.banner-text{
+    text-align:center;
+    color: #F9C9E1;
+    padding-top: 150px;
+}
+.banner-text h1{
+  
+    font-family: "Nerko One";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    color: #F96367;
+  }
+
+.banner-text p{
+    font-size: 40px;
+    font-style:italic;
+    line-height: 6%;
+    font-weight: bolder;
+    color: #FA8A90;
+    margin-left: 20px;
+}
+.banner-btn{
+    margin: 40px auto 10; 
+    text-align:center;
+    font-size: 100%; 
+}  
+.banner-btn a{
+button {
+    background-color: white;
+    color: black;
+    border-radius: 10em;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: poppins;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    border: 1px solid black;
+    box-shadow: 0 0 0 0 black;
+    margin: 2%;
+  }
+  
+  button:hover {
+    transform: translateY(-10px) translateX(-3px);
+    box-shadow: 2px 5px 0 0 black;
+  };
+  
+  button:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+  };
+}
+  @media screen and (max-width:700px ){
+    .banner-text h1{
+      font-size: 50px;
+    }
+    .banner-btn a{
+      display: block;
+  }  
+  }
+/*features code */
+#feature{ 
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+}
+.title-text{
+ text-align: center;padding-bottom: 50px;
+}
+.title-text p{
+  margin: auto;
+  font-size: 90px;
+  color:#F9C9E1;
+  font-weight: bold;
+}
+/*features code */
+
+
+
